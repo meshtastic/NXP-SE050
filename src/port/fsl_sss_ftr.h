@@ -7,8 +7,9 @@
 
 /* clang-format off */
 
-#define SSS_HAVE_MBEDTLS     (1)
+#define SSS_HAVE_MBEDTLS     (0)
 #define SSS_HAVE_OPENSSL     (0)
+#define SSS_HAVE_HOSTCRYPTO_NONE (1)
 
 /* A71CH IC */
 #define SSS_HAVE_A71CH       (0)
@@ -41,7 +42,7 @@
 
 /* mbedTLS ALT implementations */
 #define SSS_HAVE_ALT_A71CH      (0)
-#define SSS_HAVE_ALT_SSS        (1)
+#define SSS_HAVE_ALT_SSS        (0)
 
 #define SSS_HAVE_ALT         (SSS_HAVE_ALT_A71CH + SSS_HAVE_ALT_SSS)
 
@@ -75,7 +76,7 @@
 #define SSS_HAVE_FIPS (0)
 
 /* TPM BARRETO_NAEHRIG Curve is enabled */
-#define SSS_HAVE_TPM_BN (1)
+#define SSS_HAVE_TPM_BN (0)
 
 /* Edwards Curve is enabled */
 #define SSS_HAVE_EC_ED (1)
@@ -85,13 +86,13 @@
 
 /* Enable usage of secure messaging channels */
 
-#define SSS_HAVE_SCP_SCP03_SSS (1)
+#define SSS_HAVE_SCP_SCP03_SSS (0)
 
 /* With NXP NFC Reader Library */
 #define SSS_HAVE_NXPNFCRDLIB (0)
 
 /* TLS handshake support on SE is enabled */
-#define SSS_HAVE_TLS_HANDSHAKE (1)
+#define SSS_HAVE_TLS_HANDSHAKE (0)
 
 /* Import Export Key is enabled */
 #define SSS_HAVE_IMPORT (1)
